@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Servicios Contables - Nicole Guevara</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --fondo: #FDF6F0;
+      --texto: #3F3F3F;
+      --acento: #C9B6E4;
+      --boton: #EAC7C7;
+      --hover: #D8A7B1;
+      --tarjeta: #FFF1F3;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--fondo);
+      color: var(--texto);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background: linear-gradient(90deg, var(--acento), var(--boton));
+      color: white;
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    main {
+      flex: 1;
+    }
+
+    h1, h2, h3 {
+      color: var(--texto);
+      transition: color 0.3s ease;
+    }
+
+    h1:hover, h2:hover, h3:hover {
+      color: var(--hover);
+    }
+
+    p:hover {
+      opacity: 0.9;
+      transition: opacity 0.3s;
+    }
+
+ .card.sobre-mi {
+  background-color: #FFFFFF;
+  color: #2D2D2D;
+  border: 1px solid #eee;
+  border-radius: 12px;
+}
+
+    
+
+    .card:hover {
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+      transition: 0.3s ease-in-out;
+    }
+
+    .btn-personalizado {
+      background-color: var(--boton);
+      border: none;
+      color: #3F3F3F;
+      font-weight: 600;
+      border-radius: 30px;
+      padding: 10px 20px;
+      transition: all 0.3s ease;
+    }
+
+    .btn-personalizado:hover {
+      background-color: var(--hover);
+      color: white;
+    }
+
+    footer {
+      background-color: var(--acento);
+      color: #000000;
+    }
+    
+.redes a {
+  color: #2D2D2D;
+  font-size: 1.5rem;
+  margin: 0 10px;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.redes a:hover {
+  transform: scale(1.2);
+  color: var(--acento);
+}
+
+
+    .btn-success {
+      background-color: var(--hover);
+      border-color: var(--hover);
+      color: white;
+    }
+
+    .btn-success:hover {
+      background-color: var(--acento);
+    }
+
+    /* Animación fade-in */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 0.8s ease-out forwards;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <main>
+    <!-- HEADER -->
+    <header class="fade-in">
+      <div class="container">
+        <h1 class="display-5 fw-bold">Servicios Contables - Nicole Guevara</h1>
+        <p class="descripcion lead">Contabilidad con empatía y responsabilidad</p>
+      </div>
+    </header>
+
+    <!-- INICIO -->
+    <section class="container py-5 fade-in" id="inicio">
+      <h2 class="text-center mb-4">Bienvenida</h2>
+      <p class="text-center">Soy estudiante de Contabilidad y brindo servicios adaptados a tus necesidades: declaraciones, libros contables, asesoría tributaria y más.</p>
+    </section>
+
+    <!-- SOBRE MÍ + SERVICIOS Y HERRAMIENTAS -->
+    <section class="container py-5 fade-in" id="sobremi">
+      <div class="row">
+        <!-- Sobre mí -->
+        <div class="col-lg-4 mb-4">
+          <div class="card sobre-mi shadow-lg p-4 text-center">
+            <div class="d-flex justify-content-center mb-3">
+              <img src="img/logo1.jpg" alt="Nicole Guevara"
+                   class="rounded-circle border border-3 shadow"
+                   style="width: 150px; height: 150px; object-fit: cover;">
+            </div>
+            <h4 class="fw-bold">Nicole Guevara</h4>
+            <p class="text-muted mb-2">Estudiante de Contabilidad</p>
+            <p>Apoyo a emprendedores y pequeñas empresas con soluciones claras y accesibles.</p>
+            <a href="img/cv/cv.jpg" class="btn btn-personalizado mt-3" download>
+              <i class="bi bi-file-earmark-arrow-down"></i> Descargar mi CV
+            </a>
+          </div>
+        </div>
+
+        <!-- Servicios -->
+        <div class="col-lg-8">
+          <div id="servicios">
+            <h3 class="mb-4">Servicios Contables</h3>
+            <div class="row g-4">
+              <div class="col-md-6">
+                <a href="declaraciones.html" class="btn btn-personalizado w-100">
+                  <i class="bi bi-journal-check"></i> Declaraciones SUNAT
+                </a>
+              </div>
+              <div class="col-md-6">
+                <a href="asesorias.html" class="btn btn-personalizado w-100">
+                  <i class="bi bi-cash-coin"></i> Asesoría Tributaria
+                </a>
+              </div>
+              <div class="col-md-6">
+                <a href="libros.html" class="btn btn-personalizado w-100">
+                  <i class="bi bi-file-earmark-text"></i> Libros Contables
+                </a>
+              </div>
+              <div class="col-md-6">
+                <a href="consultas.html" class="btn btn-personalizado w-100">
+                  <i class="bi bi-person-badge"></i> Consultas Directas
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Herramientas -->
+          <div id="herramientas" class="mt-5">
+            <h3 class="mb-4">Herramientas Rápidas</h3>
+            <div class="row g-4">
+              <div class="col-md-6">
+                <a href="https://eldni.com/pe/buscar-por-dni" target="_blank" class="btn btn-personalizado w-100">
+                  <i class="bi bi-person-vcard"></i> Consultar DNI
+                </a>
+              </div>
+              <div class="col-md-6">
+                <a href="https://e-consultaruc.sunat.gob.pe/cl-ti-itmrconsruc/FrameCriterioBusquedaWeb.jsp" target="_blank" class="btn btn-personalizado w-100">
+                  <i class="bi bi-building"></i> Consultar RUC
+                </a>
+              </div>
+              <div class="col-md-6">
+                <a href="plan-contable.html" class="btn btn-personalizado w-100">
+                  <i class="bi bi-journal-bookmark"></i> Ver Plan Contable
+                </a>
+              </div>
+              <div class="col-md-6">
+                <a href="https://aula.iestpsanpedrodemala.edu.pe" target="_blank" class="btn btn-personalizado w-100">
+                  <i class="bi bi-mortarboard"></i> Plataforma Educativa
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- WHATSAPP -->
+  <a href="https://wa.me/+51994155688" class="btn btn-success position-fixed bottom-0 end-0 m-4 shadow-lg rounded-circle" target="_blank" style="z-index: 1000;">
+    <i class="bi bi-whatsapp fs-3"></i>
+  </a>
+
+  <!-- FOOTER -->
+  <footer class="text-center py-4 mt-auto">
+    <p class="mb-2">&copy; 2025 Nicole Guevara - Servicios Contables. Todos los derechos reservados.</p>
+    <div class="redes">
+      <a href="https://www.facebook.com/share/18QvXH2Q2P/?mibextid=wwXIfr"><i class="bi bi-facebook"></i></a>
+      <a href="https://www.instagram.com/nico_yolanda25?igsh=MWJzanV3dXhycTd6bg=="><i class="bi bi-instagram"></i></a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

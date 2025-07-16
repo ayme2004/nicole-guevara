@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Libros Contables - Nicole Guevara</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --fondo: #FDF6F0;
+      --texto: #3F3F3F;
+      --acento: #C9B6E4;
+      --boton: #EAC7C7;
+      --hover: #D8A7B1;
+      --tarjeta: #FFFFFF;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--fondo);
+      color: var(--texto);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    main {
+      flex: 1;
+    }
+
+    header {
+      background: linear-gradient(90deg, var(--acento), var(--boton));
+      color: white;
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+
+    .redes a {
+      color: #2D2D2D;
+      font-size: 1.5rem;
+      margin: 0 10px;
+      transition: color 0.3s, transform 0.3s;
+    }
+
+    .redes a:hover {
+      color: var(--acento);
+      transform: scale(1.2);
+    }
+
+    .icono-beneficio {
+      font-size: 2rem;
+      color: var(--acento);
+    }
+
+    .list-group-item {
+      background-color: var(--tarjeta);
+      border: none;
+      color: var(--texto);
+    }
+
+    .img-servicio {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    .btn-primary, .btn-outline-primary {
+      background-color: var(--boton);
+      border: none;
+      color: var(--texto);
+      border-radius: 30px;
+      transition: all 0.3s ease;
+    }
+
+    .btn-outline-primary:hover {
+      background-color: var(--hover);
+      color: white;
+    }
+
+    .btn-success {
+      background-color: var(--hover);
+      border-color: var(--hover);
+      color: white;
+      border-radius: 30px;
+    }
+
+    .btn-success:hover {
+      background-color: var(--acento);
+    }
+
+   footer {
+      background-color: var(--acento);
+      color: #000000;
+    }
+
+    h1, h2, h3, h4, h5 {
+      color: var(--texto);
+      transition: color 0.3s ease;
+    }
+
+    h1:hover, h2:hover, h3:hover, h4:hover, h5:hover {
+      color: var(--hover);
+    }
+
+    p:hover {
+      opacity: 0.9;
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 0.8s ease-out forwards;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+    <div class="container">
+      <a class="navbar-brand text-dark" href="index.html">Nicole Guevara</a>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <header class="fade-in">
+    <div class="container">
+      <h1 class="display-5 fw-bold">Libros Contables</h1>
+      <p class="lead">Gestión de libros físicos, electrónicos y reportes SUNAT</p>
+    </div>
+  </header>
+
+  <!-- CONTENIDO -->
+  <main class="container py-5 fade-in">
+    <div class="row g-5">
+      <div class="col-md-6">
+        <img src="img/libr-conta.jpg" alt="Libros Contables" class="img-servicio">
+      </div>
+      <div class="col-md-6">
+        <h3>¿Qué libros contables manejo?</h3>
+        <ul class="list-group">
+          <li class="list-group-item"><i class="bi bi-book me-2 text-primary"></i> Registro de Compras</li>
+          <li class="list-group-item"><i class="bi bi-book me-2 text-primary"></i> Registro de Ventas</li>
+          <li class="list-group-item"><i class="bi bi-journal-text me-2 text-primary"></i> Libro Diario y Mayor</li>
+          <li class="list-group-item"><i class="bi bi-laptop me-2 text-primary"></i> Libros Electrónicos (PLE)</li>
+        </ul>
+
+        <h4 class="mt-4">¿A quién está dirigido?</h4>
+        <p>Este servicio está pensado para personas naturales con negocio, pequeñas empresas y emprendedores que deseen cumplir sus obligaciones contables de forma ordenada.</p>
+
+        <h4 class="mt-4">Formato de entrega</h4>
+        <p>Los libros pueden entregarse en Excel, PDF o formato electrónico validado por SUNAT.</p>
+      </div>
+    </div>
+
+    <!-- BENEFICIOS -->
+    <section class="mt-5">
+      <h3 class="text-center mb-4">¿Por qué llevar tus libros conmigo?</h3>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <i class="bi bi-clock icono-beneficio"></i>
+          <h5 class="mt-2">Entregas puntuales</h5>
+          <p>Recibe tus libros antes del plazo SUNAT.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="bi bi-file-earmark-check icono-beneficio"></i>
+          <h5 class="mt-2">Formatos validados</h5>
+          <p>Incluye archivos compatibles con PLE SUNAT.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="bi bi-person-workspace icono-beneficio"></i>
+          <h5 class="mt-2">Soporte gratuito</h5>
+          <p>Resuelvo tus dudas contables sin costo adicional.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <div class="text-center mt-5">
+      <a href="https://wa.me/51994155688" class="btn btn-success btn-lg">
+        <i class="bi bi-whatsapp"></i> Consultar por WhatsApp
+      </a>
+      <a href="index.html#servicios" class="btn btn-outline-primary btn-lg ms-3">
+        <i class="bi bi-arrow-left"></i> Volver
+      </a>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="text-center py-4 mt-auto">
+    <p class="mb-2">&copy; 2025 Nicole Guevara - Servicios Contables. Todos los derechos reservados.</p>
+    <div class="redes">
+      <a href="https://www.facebook.com/share/18QvXH2Q2P/?mibextid=wwXIfr"><i class="bi bi-facebook"></i></a>
+      <a href="https://www.instagram.com/nico_yolanda25?igsh=MWJzanV3dXhycTd6bg=="><i class="bi bi-instagram"></i></a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
